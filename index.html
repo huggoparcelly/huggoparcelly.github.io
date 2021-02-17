@@ -6,74 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Huggo Parcelly</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <style>
-        .picture {
-            border-radius: 50%;
-        }
-        body {
-            background-image: linear-gradient(#52B3FA, #49C6DE, #5DF5E3, #49DEA3, #52FA87);
-            color: black
-        }
-
-        .hero-title {
-            font-size: 40px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .text {
-            font-size: 14px;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .formation{
-            font-size: 14px;
-            line-height: 1.2;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="hero-title" id = topo>Huggo Parcelly da Silva</h1>
-    <img class="picture" id = "minhafoto" src="images/foto1.png"Foto Huggo Parcelly" width="150px"> 
-    <p class="text"> Me chamo Huggo, tenho 28 anos, sou brasileiro e natural de <strong>Campina Grande - PB</strong>, onde resido atualmente. <br> Sou uma pessoa que gosta de novos desafios, e um dos motivos que me fizeram seguir na <strong> área de tecnologia</strong> é o constante <br> crescimento do setor, pois todos dos dias surgem novas demandas que requerem <strong> soluções tecnologicas</strong>. <br> Para tanto, precisamos estar <strong>preparados </strong> para enfrentar tais desafios. <br> Amo e prezo pela minha <strong>família</strong>, sou apaixonado por basquete, livros, animais e música.</p>
-    <hr>
-
-
-    <a href="#habil"><img src="images/skills.png" alt="Icon Skills" width="35"></a>
-    <a href="https://www.linkedin.com/in/huggoparcelly/" target="_blank"> <img src="images/linkedin.ico" alt="Icon Linkedin" width="35"> </a>
-    <a href="https://github.com/huggoparcelly"><img src="images/github.png" alt="Icon GitHub" width="35"> </a>
-    <a href="https://api.whatsapp.com/send?phone=83981383895"><img src="images/whatsapp.ico" alt="Icon Whatsapp" width="35"> </a>
-
-    <hr>
-    <h3 class="text">Formação e Conhecimentos</h3>
-    <p class="formation"> <strong>Engenharia de Produção</strong> <br>
-    UFCG <br> Concluído em 2018</p>
+    <div class="header" id="header">
+        <h1>Huggo Parcelly da Silva</h1>
+        
+        <div class="header">
+            <img class="img" src="images/foto1.png" alt="foto Huggo Parcelly">
+        </div>
+        
+        <div class="header-description header block">
+            Me chamo Huggo Parcelly, tenho 28 anos, sou brasileiro e natural de <strong>Campina Grande - PB</strong>, onde resido atualmente. Sou uma pessoa que gosta de novos desafios, e um dos motivos que me fizeram seguir na <strong>área de tecnologia</strong> é o constante crescimento do setor, pois todos dos dias surgem novas demandas que requerem <strong> soluções tecnologicas</strong>. Para tanto, precisamos estar <strong>preparados</strong> para enfrentar tais desafios. Amo minha família e sou apaixonado por tecnologia,basquete, livros e música.
+        </div>
+    </div>
     
-    <p class="formation"> <strong>Conhecimento em Python</strong> <br>
-        Curso em Vídeo <br> Carga 120h <br> Concluído em 2020</p>
+    <div class="formation">
+        <h3>Formação e Conhecimentos</h3>
 
-    <p class="formation"> <strong>Ciência da Computação</strong> <br>
-    UFCG <br> Em andamento</p>
+        <div class="font-board">
+            <strong>Engenharia de Produção</strong>
+            <p>Universidade Federal de Campina Grande - UFCG <br>
+            Concluído em 2018 </p>
+        </div>
+    
+        <div class="font-board">
+            <strong>Ciência da Computação</strong> 
+            <p>Universidade Federal de Campina Grande - UFCG <br>
+            Em andamento </p>
+        </div>
 
-    <p class="formation"> <strong>Desenvolvimento de Software e Web</strong> <br>
-        Trybe <br> Em andamento</p>
-    <hr>
-    
-    <h3 class="text" id=habil>Habilidades</h3>
-    <ul>
-        <li><em>Linux</li>
-        <li>Python</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Inglês</li></em>
-    </ul>
-    <hr>
-    
-    <a href="#topo">Topo <img src="images/up.ico" alt="Seta Up" width="25"></a>
+        <div class="font-board">
+            <strong>Conhecimento em Python</strong>
+            <p>Curso em Vídeo - Carga 120h <br> Concluído em 2020</p>
+        </div>
+
+        <div class="font-board">
+            <strong>Desenvolvimento de Software e Web</strong> 
+            <p>Trybe <br>
+            Em andamento</p>
+        </div>
+    </div>
+
+    <div class="habil">
+        <h3 id=habilit>Habilidades</h3>
+        <ul>
+            <li class=font-board><em>Linux</li>
+            <li class=font-board>Python</li>
+            <li class=font-board>HTML</li>
+            <li class=font-board>CSS</li>
+            <li class=font-board>JavaScript</li>
+            <li class=font-board>Inglês</li></em>
+        </ul>
+    </div>
+
+    <div class="icons">
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/huggoparcelly/" target="_blank"> <img src="images/linkedin.ico" alt="Icon Linkedin" width="35"> </a>
+        </div>
+
+        <div class="icon">
+            <a href="https://github.com/huggoparcelly"><img src="images/github.png" alt="Icon GitHub" width="35"> </a>
+        </div>
+
+        <div class="icon">
+            <a href="https://api.whatsapp.com/send?phone=83981383895"><img src="images/whatsapp.ico" alt="Icon Whatsapp" width="35"> </a>
+        </div>
+
+        <a class="icon" href="#header"> <img src="images/up.ico" alt="Seta Up" width="25"> </a>
+
+    </div>
+
 </body>
 </html>

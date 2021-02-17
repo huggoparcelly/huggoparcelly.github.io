@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-image: linear-gradient(#0D0D0D, #262626, #595959);
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+.header {
+    margin-left: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.header h1 {  
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.img {
+    border-radius: 50%;
+    width: 150px;
+    border: 2px solid whitesmoke;
+    margin: 20px;
+}
+
+
+.header-description {
+    font-size: 14px;
+    text-align: justify;
+    border: 1px solid whitesmoke;
+}
+
+
+.font-board {
+    font-size: 13px;
+    border: 1px solid whitesmoke;
+    line-height: 20px;
+    padding: 7px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.formation .font-board {
+    width: 400px;
+}
+
+.formation, .habil {
+    text-align: center;
+}
+
+div h3 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.icons {
+    margin: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    display: inline-block;
+}
