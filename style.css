@@ -17,23 +17,27 @@ body {
 }
 
 
-.header h1 {  
+h1 {  
     font-family: Montserrat;
     text-align: center;
 }
 
+.img-text {
+    display: inline-block
+}
+
 .img {
     border-radius: 50%;
-    width: 150px;
+    width: 120px;
     border: 2px solid whitesmoke;
     margin: 20px;
+    float: left;
 }
 
 
 .header-description {
     font-size: 14px;
     text-align: justify;
-    border: 1px solid whitesmoke;
 }
 
 
