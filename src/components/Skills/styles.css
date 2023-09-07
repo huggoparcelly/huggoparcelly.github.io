@@ -1,0 +1,18 @@
+.skills-container {
+    margin: 30px;
+    text-align: center;
+}
+
+
+
+.image-container {
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;   
+    gap: 1em;
+}
+
+

@@ -1,0 +1,62 @@
+/* Estilos para telas maiores que 750px */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #202020;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+  
+  /* Estilos para telas menores que 750px */
+  @media screen and (max-width: 750px) {
+    ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+    }
+  
+    ul.active {
+      display: flex;
+    }
+  
+    li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    /* Estilos para o ícone do menu hambúrguer */
+    #menu-icon {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 24px;
+    }
+  }
+  

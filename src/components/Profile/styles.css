@@ -1,0 +1,27 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.image {
+    border-radius: 50%;
+    width: 200px;
+    height: auto;
+}
+
+.description {
+    display: flex;
+    text-align: justify;
+    padding: 5px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 750px) {
+    .description {
+        width: 60%;
+        font-size: 18px;
+    }
+    
+}

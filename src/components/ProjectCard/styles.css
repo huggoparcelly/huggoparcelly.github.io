@@ -1,0 +1,31 @@
+.card {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.664);
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.card a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card a:hover {
+  cursor:pointer
+}
