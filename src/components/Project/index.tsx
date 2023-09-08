@@ -59,7 +59,7 @@ export default function Project() {
             >
                 {cardsData.map((card, index) => (
                     <div key={index}>
-                        <ProjectCard />
+                        <ProjectCard card={card}/>
                     </div>
                 ))}
 
