@@ -1,16 +1,15 @@
-// import Link from "next/link";
-// 'use client'
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import movieCrudCard from '../../assets/movie-crud-card.png'
 import fakebook from '../../assets/fakebook.png'
 import onlineStore from '../../assets/online-store.png'
 import pixelArt from '../../assets/pixel-art.png'
 import projectRecipes from '../../assets/project-recipes.png'
+import scroolImage from '../../assets/icon.png'
 
 import './styles.css'
 import ProjectCard from '../ProjectCard'
+import { useRef } from 'react'
+
 
 
 export default function Project() {
@@ -20,7 +19,8 @@ export default function Project() {
             imageSrc: movieCrudCard,
             title: "Movie CRUD Card",
             link: "https://huggoparcelly.github.io/movie-card-crud/",
-        },
+        }
+        ,
         {
             imageSrc: fakebook,
             title: "Facebook Singup",
@@ -43,27 +43,46 @@ export default function Project() {
         }
     ]
 
-    return (
-        <div className='carousel'>
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                showIndicators={false}
-                infiniteLoop={true}
-                dynamicHeight={false}
-                axis="horizontal"
-                centerMode={true}
-                useKeyboardArrows={true}
-                centerSlidePercentage={33.3}
-                emulateTouch={true}
-            >
-                {cardsData.map((card, index) => (
-                    <div key={index}>
-                        <ProjectCard />
-                    </div>
-                ))}
+    const carrossel = useRef<HTMLInputElement>(null);
 
-            </Carousel>
+    const handleLeftScroll = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.preventDefault();
+        if (carrossel.current != null) {
+            carrossel.current.scrollLeft -= carrossel.current.offsetWidth;
+        }
+
+    };
+
+    const handleRightScroll = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        event.preventDefault();
+        if (carrossel.current != null) {
+            carrossel.current.scrollLeft += carrossel.current.offsetWidth;
+        }
+    };
+
+
+    return (
+        <div className='component-carousel'>
+
+            <div className='container'>
+                <button onClick={handleLeftScroll} className="scrool left">
+                    <img src={scroolImage} alt="Scrool Left" />
+                </button>
+
+                <div className="carousel" ref={carrossel}>
+                    {/* {renderCards()} */}
+                    {cardsData.map((card, index) => (
+                        <div key={index}>
+                            <ProjectCard card={card} />
+                        </div>
+                    ))}
+                </div>
+
+                <button onClick={handleRightScroll} className="scrool right">
+                    <img src={scroolImage} alt="Scrool Right" />
+                </button>
+            </div>
+
 
         </div>
 

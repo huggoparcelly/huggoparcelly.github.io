@@ -5,9 +5,11 @@ export default function Profile() {
 
     return (
         <section className="about-container">
-            <img src={profilePhoto} alt="Huggo Parcelly Profile Photo" className="image" />
+            <div>
+                <img src={profilePhoto} alt="Huggo Parcelly Profile Photo" className="image" />
 
-            <h2>Huggo Parcelly</h2>
+                <h2>Huggo Parcelly</h2>
+            </div>
             <div className="description">
                 <p>Meu portfólio é a minha história em constante crescimento, misturando minha paixão pela programação com minha busca acadêmica.
                     Tenho formação em desenvolvimento web Full-Stack, onde ganhei habilidades sólidas em front-end e back-end.
