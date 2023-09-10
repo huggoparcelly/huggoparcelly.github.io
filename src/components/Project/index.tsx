@@ -43,17 +43,21 @@ export default function Project() {
         }
     ]
 
-    const carrossel = useRef(null);
+    const carrossel = useRef<HTMLInputElement>(null);
 
     const handleLeftScroll = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault();
-        
-        carrossel.current.scrollLeft -= carrossel.current.offsetWidth;
+        if (carrossel.current != null) {
+            carrossel.current.scrollLeft -= carrossel.current.offsetWidth;
+        }
+
     };
 
     const handleRightScroll = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault();
-        carrossel.current.scrollLeft += carrossel.current.offsetWidth;
+        if (carrossel.current != null) {
+            carrossel.current.scrollLeft += carrossel.current.offsetWidth;
+        }
     };
 
 
@@ -64,7 +68,7 @@ export default function Project() {
                 <button onClick={handleLeftScroll} className="scrool left">
                     <img src={scroolImage} alt="Scrool Left" />
                 </button>
-                
+
                 <div className="carousel" ref={carrossel}>
                     {/* {renderCards()} */}
                     {cardsData.map((card, index) => (
@@ -73,7 +77,7 @@ export default function Project() {
                         </div>
                     ))}
                 </div>
-                
+
                 <button onClick={handleRightScroll} className="scrool right">
                     <img src={scroolImage} alt="Scrool Right" />
                 </button>
