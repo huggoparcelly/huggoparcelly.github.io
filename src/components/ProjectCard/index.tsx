@@ -1,5 +1,6 @@
 // import Link from "next/link";
 
+import { Card } from 'react-bootstrap';
 import './styles.css'
 
 type CardData = {
@@ -13,11 +14,13 @@ type CardData = {
 export default function ProjectCard(props: CardData) {
     const { card } = props;
     return (
-        <div className="card">
-            <img src={card.imageSrc} alt={card.title} />
-            <h2>{card.title}</h2>
-            <a href={card.link} target='_blank'>View More</a>
-        </div>
+        <Card>
+            <Card.Img variant="top" src={card.imageSrc} className='card-img' />
+            <Card.Body>
+                <Card.Title className='card-title'>{card.title}</Card.Title>
+                <Card.Link className='card-link' href={card.link}>view more</Card.Link>
+            </Card.Body>
+        </Card>
 
     )
 }
