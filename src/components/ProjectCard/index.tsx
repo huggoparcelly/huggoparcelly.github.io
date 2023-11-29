@@ -1,5 +1,3 @@
-// import Link from "next/link";
-
 import { Card } from 'react-bootstrap';
 import './styles.css'
 
@@ -18,7 +16,7 @@ export default function ProjectCard(props: CardData) {
             <Card.Img variant="top" src={card.imageSrc} className='card-img' />
             <Card.Body>
                 <Card.Title className='card-title'>{card.title}</Card.Title>
-                <Card.Link className='card-link' href={card.link}>view more</Card.Link>
+                <Card.Link className='card-link' href={card.link} target='_blank'>view more</Card.Link>
             </Card.Body>
         </Card>
 
