@@ -16,7 +16,7 @@ export default function Skills() {
                 <img alt="Nodejs" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" />
                 <img alt="Java" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" />
                 <img alt="SpringBoot" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" />
-                <img alt="Go Lang" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" />
+                {/* <img alt="Go Lang" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" /> */}
                 <img alt="Docker" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" />
                 <img alt="Postgresql" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" />
                 <img alt="MySql" height="60" width="70" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" />

@@ -3,7 +3,7 @@ import './styles.css'
 export default function Header() {
     return (
             <header>
-                <h2>Bem Vindo</h2>
+                <h2><a href="/">Bem Vindo</a></h2>
                 <div id="menu-icon">&#8801;</div> 
                 <ul>
                     <li><a href="#home">Home</a></li>
