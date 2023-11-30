@@ -3,8 +3,9 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './page/Home'
-import About from './components/About'
+
 import NotFound from './page/NotFound'
+import About from './page/About'
 
 
 function App() {
