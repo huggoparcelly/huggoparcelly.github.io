@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
     flex-direction: column;
 }
 
 .image {
     border-radius: 50%;
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 
