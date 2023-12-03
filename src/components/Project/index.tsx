@@ -5,6 +5,8 @@ import onlineStore from '../../assets/online-store.png'
 import pixelArt from '../../assets/pixel-art.png'
 import projectRecipes from '../../assets/project-recipes.png'
 import scroolImage from '../../assets/icon.png'
+import todoListFresh from '../../assets/todo-list-fresh.png'
+import hpmeta from '../../assets/hpmeta.png'
 
 import './styles.css'
 import ProjectCard from '../ProjectCard'
@@ -15,6 +17,18 @@ import { useRef } from 'react'
 export default function Project() {
 
     const cardsData = [
+        {
+            imageSrc: todoListFresh,
+            title: "Fresh TODO List",
+            link: "https://todo-list-fresh.deno.dev/",
+        }
+        ,
+        {
+            imageSrc: hpmeta,
+            title: "Relatorio de Vendas",
+            link: "https://dsmeta-huggoparcelly.netlify.app/",
+        }
+        ,
         {
             imageSrc: movieCrudCard,
             title: "Movie CRUD Card",
